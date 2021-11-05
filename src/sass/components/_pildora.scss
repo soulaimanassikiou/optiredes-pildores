@@ -1,0 +1,37 @@
+.pildora{
+
+  &__title{∑
+    &-label{
+      color: $brand-color;
+      font-weight: bold;
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 0.8rem;
+    }
+    &-number{
+      padding: $gutter;
+      color: white;
+      font-size: 32px;
+      background-color: $brand-color;
+      position: relative;
+      text-align: center;
+      h2{
+        margin: 8px
+      }
+    }
+    &-text{
+      padding: $gutter;
+      color: $brand-color;
+      background-color: $light-orange;
+    }
+
+
+  }
+
+  &__body{
+    p:last-child{
+      color: $light-blue
+    }   
+  }
+}
+

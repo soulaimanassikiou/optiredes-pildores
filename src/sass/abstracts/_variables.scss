@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(255, 102, 0) !default;
+/// Secondary brand color
+/// @type Color
+$secondary-color: rgb(255, 180, 68) !default;
+
+/// Light orange
+/// @type Color
+$light-orange: rgb(255, 245, 229) !default;
+
+/// Light blue
+/// @type Color
+$light-blue: rgb(52, 171, 235) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+/*------------------------------------*\
+* CONTAINER
+\*------------------------------------*/
+$container-max-width: 84rem;
+
+/*------------------------------------*\
+* COLUMNS
+\*------------------------------------*/
+$columns-number: 12;
+$gutter: 1rem;
+
+// Small devices (landscape phones, etc)
+$screen-xs-max: 768px;
+
+// Medium devices (tablets, 768px and up)
+$screen-sm-min: 768px;
+
+// Large devices (desktops, 992px and up)
+$screen-md-min: 992px;
+
+// Extra large devices (large desktops, 1200px and up)
+$screen-lg-min: 1200px;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+
+// TYPOGRAPHIES
+
+$lato-font: "../../fonts/Lato-";
+$novecento-font: "../../fonts/Novecento-sans-wide-";
+
+

@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Brr';
+	src: url("../../fonts/Novecentosanswide-Bold.ttf") format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url($lato-font + "Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url($lato-font + "Italic.ttf") format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url($lato-font + "Bold.ttf") format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url($lato-font + "BoldItalic.ttf") format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Novecento';
+	src: url($novecento-font + "Normal.otf") format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Novecento';
+	src: url($novecento-font + "Bold.otf") format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+:root {
+
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: sans-serif;
+
+  /* set base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  /* type scale */
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  /* line-height */
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+
+   /* spacing values */
+   --space-xxxs: 0.25em;
+   --space-xxs:  0.375em;
+   --space-xs:   0.5em;
+   --space-sm:   0.75em;
+   --space-md:   1.25em;
+   --space-lg:   2em;
+   --space-xl:   3.25em;
+   --space-xxl:  5.25em;
+   --space-xxxl: 8.5em;
+
+}
+
+/**
+ * Basic typography style for copy text
+ */
+ body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+h1, h2, h3, h4, form legend {
+  font-family: var(--font-secondary);
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+  font-weight: bold;
+}
+
+/* text size */
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1, .text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h2, .text--xl {
+  font-size: var(--text-xl);
+}
+
+h3, .text--lg {
+  font-size: var(--text-lg);
+}
+
+h4, .text--md {
+  font-size: var(--text-md);
+}
+
+.text--sm, small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+h2, h3, h4 {
+  margin-top: var(--space-sm);
+}
+
+ul, ol, p {
+  margin-bottom: var(--space-md);
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+      color: var(--color-link-visited);
+  }
+}
+
+b, strong {
+  font-weight: bold;
+}
+em { font-style:italic; }
+strong em {
+	font-weight:bold;
+	font-style:italic;
+}

@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Kitty Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+// Generate Media Queries
+
+@mixin xs {
+  @media (max-width: #{$screen-xs-max}) {
+      @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+@mixin gridGenerator($breakpoint, $offset: false) {
+  /*------------------------------------*\
+  # COLUMNS
+  \*------------------------------------*/
+  @for $column from 1 to $columns-number+1 {
+      .col-#{$breakpoint}-#{$column} {
+          // flex-basis: percentage($column / $columns-number);
+          width: (100% * $column) / $columns-number;
+      }
+  }
+
+  /*------------------------------------*\
+  # OFFSET COLUMNS
+  \*------------------------------------*/
+  @if $offset {
+      @for $column from 1 to $columns-number+1 {
+          .col-#{$breakpoint}-offset-#{$column} {
+              margin-left: (100% * $column) / $columns-number;
+          }
+      }
+  }
+}

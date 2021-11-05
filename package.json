@@ -1,0 +1,27 @@
+{
+  "name": "pildores-html",
+  "version": "1.0.0",
+  "description": "Catàleg de píldores setmanal d'Optiredes per els socis de QF+",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/sass/main.scss dist/main.css",
+    "watch": "npm run sass & node-sass src/sass -wo dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulaimanassikiou/optiredes-pildores.git"
+  },
+  "keywords": [
+    "optiredes",
+    "pildores"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulaimanassikiou/optiredes-pildores/issues"
+  },
+  "homepage": "https://github.com/soulaimanassikiou/optiredes-pildores#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
