@@ -137,11 +137,11 @@ ul, ol, p {
 }
 
 a {
-  color: var(--color-link);
+  color: $brand-color;
 
-  &:visited {
-      color: var(--color-link-visited);
-  }
+  // &:visited {
+  //     color: var(--color-link-visited);
+  // }
 }
 
 b, strong {

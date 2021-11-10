@@ -145,9 +145,7 @@ ul, ol, p {
   margin-bottom: var(--space-md); }
 
 a {
-  color: var(--color-link); }
-  a:visited {
-    color: var(--color-link-visited); }
+  color: #ff6600; }
 
 b, strong {
   font-weight: bold; }
