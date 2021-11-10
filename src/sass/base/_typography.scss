@@ -1,51 +1,49 @@
 @font-face {
-	font-family: 'Brr';
-	src: url("../../fonts/Novecentosanswide-Bold.ttf") format('truetype');
-	font-weight: bold;
+  font-family: "Lato";
+  src: url("../src/fonts/Lato-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Lato';
-	src: url($lato-font + "Regular.ttf") format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Lato';
-	src: url($lato-font + "Italic.ttf") format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-@font-face {
-	font-family: 'Lato';
-	src: url($lato-font + "Bold.ttf") format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Lato';
-	src: url($lato-font + "BoldItalic.ttf") format('truetype');
-	font-weight: bold;
-	font-style: italic;
+  font-family: "Lato";
+  src: url("../src/fonts/Lato-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold;
 }
 
 @font-face {
-	font-family: 'Novecento';
-	src: url($novecento-font + "Normal.otf") format('opentype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Lato";
+  src: url("../src/fonts/Lato-Italic.ttf") format("ttf");
+  font-style: italic;
+  font-weight: normal;
 }
+
 @font-face {
-	font-family: 'Novecento';
-	src: url($novecento-font + "Bold.otf") format('opentype');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Lato";
+  src: url("../src/fonts/Lato-Light.ttf") format("ttf");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Novecento";
+  src: url("../src/fonts/Novecentosanswide-Normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Novecento";
+  src: url("../src/fonts/Novecentosanswide-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
 }
 
 :root {
 
   --font-primary: 'Lato', sans-serif;
-  --font-secondary: sans-serif;
+  --font-secondary: 'Novecento', serif;
 
   /* set base values */
   --text-base-size: 1em;
@@ -94,6 +92,7 @@ h1, h2, h3, h4, form legend {
   margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
   font-weight: bold;
+  text-transform: lowercase;
 }
 
 /* text size */

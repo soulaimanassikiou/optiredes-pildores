@@ -33,6 +33,10 @@ $secondary-color: rgb(255, 180, 68) !default;
 /// @type Color
 $light-orange: rgb(255, 245, 229) !default;
 
+/// Light yellow
+/// @type Color
+$light-yellow: rgb(255, 244, 209) !default;
+
 /// Light blue
 /// @type Color
 $light-blue: rgb(52, 171, 235) !default;
@@ -47,7 +51,7 @@ $mid-grey: rgb(153, 153, 153) !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: rgb(51, 51, 51) !default;
 
 
 
@@ -90,9 +94,10 @@ $screen-lg-min: 1200px;
 $base-url: '/assets/' !default;
 
 
-// TYPOGRAPHIES
+/// TYPOGRAPHIES
 
 $lato-font: "../../fonts/Lato-";
 $novecento-font: "../../fonts/Novecento-sans-wide-";
+
 
 

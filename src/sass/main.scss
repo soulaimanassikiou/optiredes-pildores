@@ -6,9 +6,15 @@
   'abstracts/functions',
   'abstracts/mixins';
 
+// 3. Base stuff
+@import
+'base/base',
+'base/typography',
+'base/helpers';
+
 // 2. Vendors
 @import
-  'vendors/normalize';
+'vendors/normalize';
 
   // 4. Layout-related sections
 @import
@@ -19,14 +25,13 @@
 
 // 5. Components
 @import
+'components/icons',
+'components/lists',
 'components/pildora',
-'components/button';
+'components/button',
+'components/alert';
 
-// 3. Base stuff
-@import
-  'base/base',
-  'base/typography',
-  'base/helpers';
+
 // 6. Page-specific styles
 // @import
 //   'pages/home';

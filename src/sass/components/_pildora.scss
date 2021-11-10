@@ -1,6 +1,14 @@
 .pildora{
+  border: 1px solid $dark-grey;
+  box-shadow: 15px 15px $dark-grey;
+  margin-bottom: 80px;
 
-  &__title{∑
+  .row {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__title{
     &-label{
       color: $brand-color;
       font-weight: bold;
@@ -9,29 +17,61 @@
       letter-spacing: 0.8rem;
     }
     &-number{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: $gutter;
       color: white;
-      font-size: 32px;
+      font-size: 28px;
       background-color: $brand-color;
       position: relative;
       text-align: center;
       h2{
-        margin: 8px
+        margin: 0px
       }
     }
     &-text{
+      // border-right: 8px solid $brand-color;
       padding: $gutter;
       color: $brand-color;
       background-color: $light-orange;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        margin: 0px $gutter;
+      }
     }
 
 
   }
 
   &__body{
+    padding: $gutter * 2;
     p:last-child{
       color: $light-blue
-    }   
+    }  
+    
+    &-img {
+      padding: 0px;
+      padding-right: $gutter;
+      img{
+        width: 100%;
+      }
+    } 
+
+    &-catalan{
+      padding-top: 0px;
+      padding-left: $gutter * 2;
+
+    }
+    &-spanish {
+      padding-top: 0px;
+      padding-left: $gutter;
+      border-left: 1px solid $light-grey;
+    }
+
   }
 }
 

@@ -1,0 +1,18 @@
+footer{
+  color: white;
+  background-color: #585858;
+  border-bottom: 20px solid #333;
+  h2{
+    color: $secondary-color;
+  }
+  h3{
+    font-family: 'Lato';
+    font-weight: lighter;
+  }
+  h3::first-letter{
+    text-transform: uppercase;
+  }
+  a{
+    color: $brand-color;
+  }
+}
