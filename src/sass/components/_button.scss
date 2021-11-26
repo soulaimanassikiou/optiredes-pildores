@@ -1,0 +1,30 @@
+.button {
+  background-color: $brand-color;
+  font-family: 'Novecento', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 15px 15px $dark-grey;
+
+  animation: button_animation 1s ease forwards;
+  transition: box-shadow 1s;
+
+  &:hover{
+    background-color: $secondary-color;
+    text-decoration: none;
+    box-shadow: 5px 5px $dark-grey;
+  }
+}
+
+@-webkit-keyframes button_animation {
+  0% { box-shadow: 15px 15px $dark-grey; }
+  25% { box-shadow: 5px 5px $dark-grey; }
+  50% { box-shadow: 15px 15px $dark-grey; }
+  75% { box-shadow: 5px 5px $dark-grey; }
+  100% { box-shadow: 15px 15px $dark-grey; }
+}

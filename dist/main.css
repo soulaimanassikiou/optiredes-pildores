@@ -1017,6 +1017,37 @@ ol {
       padding-left: 1rem;
       border-left: 1px solid #ededed; }
 
+.button {
+  background-color: #ff6600;
+  font-family: 'Novecento', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 15px 15px #333333;
+  animation: button_animation 1s ease forwards;
+  transition: box-shadow 1s; }
+  .button:hover {
+    background-color: #ffb444;
+    text-decoration: none;
+    box-shadow: 5px 5px #333333; }
+
+@-webkit-keyframes button_animation {
+  0% {
+    box-shadow: 15px 15px #333333; }
+  25% {
+    box-shadow: 5px 5px #333333; }
+  50% {
+    box-shadow: 15px 15px #333333; }
+  75% {
+    box-shadow: 5px 5px #333333; }
+  100% {
+    box-shadow: 15px 15px #333333; } }
+
 .alert {
   border: 4px dashed #333333;
   padding: 20px 40px;
