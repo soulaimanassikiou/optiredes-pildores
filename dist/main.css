@@ -935,24 +935,24 @@ footer {
   height: 48px;
   margin-left: 1em; }
 
-ul {
+footer ul {
   margin-left: 40px;
   list-style: none; }
-  ul li:before {
+  footer ul li:before {
     content: '\1F449'; }
-  ul span {
+  footer ul span {
     color: mediumseagreen; }
 
-ol {
+footer ol {
   margin-left: 40px;
   counter-reset: my-counter;
   list-style: none;
   position: relative; }
-  ol li {
+  footer ol li {
     counter-increment: my-counter;
     margin-bottom: 16px;
     line-height: 40px; }
-  ol li:before {
+  footer ol li:before {
     content: counter(my-counter);
     font-weight: bold;
     color: white;
