@@ -1,0 +1,24 @@
+.tooltip {
+  position: absolute;
+  display: block;
+  background-color: white;
+  border-bottom: 1px dotted black;
+  border-radius: 50%;
+  border: 4px solid $light-grey;
+  height: 60px;
+  padding: 8px 16px;
+  width: 60px;
+  right: 0%;
+  top: -64px;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  color: #fff;
+  font-size: $icon-size;
+  text-align: center;
+  top: calc(#{$icon-size} * 1.0223 / 2) - 8px; //the last 8px is for the parent's padding
+  left: calc(50% - (#{$icon-size} / 2));
+}

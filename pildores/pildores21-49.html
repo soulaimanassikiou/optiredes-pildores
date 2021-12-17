@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Píldoras semana 49</title>
-  <link rel="stylesheet" type="text/css" href="https://soulaimanassikiou.github.io/optiredes-pildores/dist/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://soulaimanassikiou.github.io/optiredes-pildores/dist/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="../dist/main.css">
+  <script src="../src/js/index.js"></script>
 
 </head>
 
@@ -83,10 +85,10 @@
 
               <!-- <p class="pildora__title-label">PíLDORA</p> -->
               <div class="row">
-                <div class="pildora__title-number col-xs-1">
+                <div class="pildora__title-number col-xs-12 col-md-1">
                   <h2>1</h2>
                 </div>
-                <div class="pildora__title-text col-xs-11">
+                <div class="pildora__title-text col-xs-12 col-md-11">
                   <h2>Receta - Tarta Tatín de Berenjena y Ricotta</h2>
                 </div>
               </div>
@@ -95,97 +97,118 @@
           <div class="pildora__body">
             <div class="content">
               <div class="row">
-                <div class="pildora__body-img col-xs-2">
+                <div class="pildora__body-img col-xs-12 col-md-2">
                   <img src="https://soulaimanassikiou.github.io/optiredes-pildores/src/img/pildores/49-1.png" alt="">
                 </div>
 
-                <div class="pildora__body-spanish col-xs-5">
-                  <img src="../src/img/spanish-flag.svg" alt="" style="width: 48px;">
-                  <p>¿Sin ideas para las comidas de Navidad?</p>
-                  <p>Hoy te traemos esta deliciosa receta de tarta tatín de berenjena y ricotta, ideal para compartir
-                    como entrante en el menú de las fiestas. 🍆🥧🧀</p>
-                  <p>Como ya sabréis la tarta tatín se monta de manera invertida, y la más conocida es la de manzana,
-                    pero hoy vamos a preparar una versión salada gracias a la receta de MJ para @cocinaconbra.</p>
-                  <p>Ingredientes (2-4 personas):</p>
-                  <ul>
-                    <li>1 berenjena morada grande</li>
-                    <li>100g de queso ricotta</li>
-                    <li>1 lámina de hojaldre</li>
-                    <li>1 cucharada de postre de miel de caña</li>
-                    <li>Piñones</li>
-                    <li>Aceite de oliva virgen extra</li>
-                    <li>Sal</li>
-                  </ul>
-                  <p>Preparación:</p>
-                  <ol>
-                    <li>Lavamos la berenjena, la secamos y la cortamos en láminas finas con una mandolina.</li>
-                    <li>Salamos las láminas de berenjena por ambas caras y ponemos en la sartén Efficient de 28cm, que
-                      préviamente hemos pintado con un pincel y aceite de oliva virgen extra.</li>
-                    <li>Cocinamos las berenjenas por ambos lados, se hacen súper rápido y las vamos reservando en un
-                      plato.</li>
-                    <li>Una vez que las tenemos todas cocinadas cogemos una cacerola baja Efficient Plus de 24 cm.
-                      Echamos una cucharada colmada de miel de caña en el fondo de la cacerola repartiendola lo mejor
-                      posible por toda la superficie.</li>
-                    <li>A continuación colocamos la mitad de las berenjenas intentando cubrir toda la superficie de la
-                      cacerola. Cubrimos con el queso ricotta repartiendolo bien por toda la superficie y acabamos con
-                      otra capa de berenjenas.</li>
-                    <li>Cubrimos con la masa de hojaldre que debe de ser un poco más grande que la cacerola para doblar
-                      los bordes. Pinchamos el hojaldre con una puntilla para evitar que suba mucho.</li>
-                    <li>Horneamos a 180ºC durante 15-20 minutos con el horno precalentado opción arriba-abajo o hasta
-                      que el hojaldre esté dorado.</li>
-                    <li>Servimos con unos cuantos piñones por encima.</li>
-                  </ol>
-                  <p>¡Y a disfrutar! 🤤</p>
-                  <p>Una receta súper sencilla y resultona para sorprender a tus invitados estas Navidades. 👌</p>
-                  <p>--</p>
-                  <p>#navidad #navidad2021 #comida #menudenavidad #entrantesnavideños #entrantesnavidad #foodie
-                    #foodporn #tartatatin #tatin #tartasalada #veggie #christmas #receta #recetanavidad</p>
+                <div class="pildora__body-spanish col-xs-12 col-md-5">
+                  <div class="pildora__body-tools">
+
+                    <button class="button button-copy" onclick="copyText(event, 'pil-1-es', 'tool-1-es')">
+                      <img class="flag" src="../src/img/spanish-flag.svg" alt="" style="width: 24px;">
+                      <span>copiar texto</span>
+                    </button>
+
+
+                  </div>
+                  <div id="pil-1-es">
+                    <p>¿Sin ideas para las comidas de Navidad?</p>
+                    <p>Hoy te traemos esta deliciosa receta de tarta tatín de berenjena y ricotta, ideal para compartir
+                      como entrante en el menú de las fiestas. 🍆🥧🧀</p>
+                    <p>Como ya sabréis la tarta tatín se monta de manera invertida, y la más conocida es la de manzana,
+                      pero hoy vamos a preparar una versión salada gracias a la receta de MJ para @cocinaconbra.</p>
+                    <p>Ingredientes (2-4 personas):</p>
+                    <ul>
+                      <li>1 berenjena morada grande</li>
+                      <li>100g de queso ricotta</li>
+                      <li>1 lámina de hojaldre</li>
+                      <li>1 cucharada de postre de miel de caña</li>
+                      <li>Piñones</li>
+                      <li>Aceite de oliva virgen extra</li>
+                      <li>Sal</li>
+                    </ul>
+                    <p>Preparación:</p>
+                    <ol>
+                      <li>Lavamos la berenjena, la secamos y la cortamos en láminas finas con una mandolina.</li>
+                      <li>Salamos las láminas de berenjena por ambas caras y ponemos en la sartén Efficient de 28cm, que
+                        préviamente hemos pintado con un pincel y aceite de oliva virgen extra.</li>
+                      <li>Cocinamos las berenjenas por ambos lados, se hacen súper rápido y las vamos reservando en un
+                        plato.</li>
+                      <li>Una vez que las tenemos todas cocinadas cogemos una cacerola baja Efficient Plus de 24 cm.
+                        Echamos una cucharada colmada de miel de caña en el fondo de la cacerola repartiendola lo mejor
+                        posible por toda la superficie.</li>
+                      <li>A continuación colocamos la mitad de las berenjenas intentando cubrir toda la superficie de la
+                        cacerola. Cubrimos con el queso ricotta repartiendolo bien por toda la superficie y acabamos con
+                        otra capa de berenjenas.</li>
+                      <li>Cubrimos con la masa de hojaldre que debe de ser un poco más grande que la cacerola para
+                        doblar
+                        los bordes. Pinchamos el hojaldre con una puntilla para evitar que suba mucho.</li>
+                      <li>Horneamos a 180ºC durante 15-20 minutos con el horno precalentado opción arriba-abajo o hasta
+                        que el hojaldre esté dorado.</li>
+                      <li>Servimos con unos cuantos piñones por encima.</li>
+                    </ol>
+                    <p>¡Y a disfrutar! 🤤</p>
+                    <p>Una receta súper sencilla y resultona para sorprender a tus invitados estas Navidades. 👌</p>
+                    <p>--</p>
+                    <p>#navidad #navidad2021 #comida #menudenavidad #entrantesnavideños #entrantesnavidad #foodie
+                      #foodporn #tartatatin #tatin #tartasalada #veggie #christmas #receta #recetanavidad</p>
+
+                  </div>
+
 
                 </div>
 
-                <div class="pildora__body-catalan col-xs-5">
-                  <img src="../src/img/catalan-flag.svg" alt="" style="width: 48px;">
-                  <p>Sense idees per als dinars de Nadal?</p>
-                  <p>Avui et portem aquesta deliciosa recepta de 'tarta tatín' d'albergínia i ricotta, ideal per
-                    compartir com a entrant al menú de les festes. 🍆🥧🧀</p>
-                  <p>Com ja sabreu la 'tarta tatín' es munta de manera invertida, i la més coneguda és la de poma, però
-                    avui prepararem una versió salada gràcies a la recepta de MJ per a @cuinaconbra.</p>
-                  <p>Ingredients (2-4 persones):</p>
-                  <ul>
-                    <li>1 albergínia morada gran</li>
-                    <li>100g de formatge ricotta</li>
-                    <li>1 làmina de pasta de full</li>
-                    <li>1 cullerada de postres de mel de canya</li>
-                    <li>Pinyons</li>
-                    <li>Oli d'oliva verge extra</li>
-                    <li>Sal</li>
-                  </ul>
-                  <p>Preparació:</p>
-                  <ol>
-                    <li>Renteu l'albergínia, l'assequeu i la talleu en làmines fines amb una mandolina.</li>
-                    <li>Salem les làmines d'albergínia per les dues cares i posem a la paella Efficient de 28cm, que
-                      prèviament hem pintat amb un pinzell i oli d'oliva verge extra.</li>
-                    <li>Cuinem les albergínies pels dos costats, es fan súper ràpid i les anem reservant en un plat.
-                    </li>
-                    <li>Quan les tenim totes cuinades agafem una cassola baixa Efficient Plus de 24 cm. Hi posem una
-                      cullerada plena de mel de canya al fons de la cassola repartint-la tan bé com sigui possible per
-                      tota la superfície.</li>
-                    <li>A continuació col·loquem la meitat de les albergínies intentant cobrir tota la superfície de la
-                      cassola. Cobrim amb el formatge ricotta repartint-lo bé per tota la superfície i acabem amb una
-                      altra capa d'albergínies.</li>
-                    <li>Ho cobrim amb la massa de pasta de full que hauria de ser una mica més gran que la cassola per
-                      poder doblegar
-                      les vores fàcilment. Punxem la pasta de full amb una punta per evitar que pugi molt.</li>
-                    <li>Enfornem a 180ºC durant 15-20 minuts amb el forn preescalfat opció amunt-avall o fins que la
-                      pasta de full estigui daurada.</li>
-                    <li>Serviu-ho amb uns quants pinyons per sobre.</li>
-                  </ol>
-                  <p>I a gaudir! 🤤</p>
-                  <p>Una recepta senzilla i curiosa per sorprendre als teus convidats aquest Nadal. 👌</p>
-                  <p>--</p>
-                  <p>#navidad #navidad2021 #nadal #nadal2021 #comida #dinardenadal #menudenavidad #menudenadal
-                    #entrantesnavideños #entrantsdenadal #entrantesnavidad #foodie #foodporn #tartatatin #tatin
-                    #tartasalada #veggie #christmas #receta #recepta #receptadenadal #recetanavidad</p>
+                <div class="pildora__body-catalan col-xs-12 col-md-5">
+
+                  <button class="button button-copy" onclick="copyText(event, 'pil-1-cat', 'tool-1-cat')">
+                    <img class="flag" src="../src/img/catalan-flag.svg" alt="" style="width: 24px;">
+                    <span>copiar text</span>
+                  </button>
+                  <div id="pil-1-cat">
+                    <p>Sense idees per als dinars de Nadal?</p>
+                    <p>Avui et portem aquesta deliciosa recepta de 'tarta tatín' d'albergínia i ricotta, ideal per
+                      compartir com a entrant al menú de les festes. 🍆🥧🧀</p>
+                    <p>Com ja sabreu la 'tarta tatín' es munta de manera invertida, i la més coneguda és la de poma,
+                      però
+                      avui prepararem una versió salada gràcies a la recepta de MJ per a @cuinaconbra.</p>
+                    <p>Ingredients (2-4 persones):</p>
+                    <ul>
+                      <li>1 albergínia morada gran</li>
+                      <li>100g de formatge ricotta</li>
+                      <li>1 làmina de pasta de full</li>
+                      <li>1 cullerada de postres de mel de canya</li>
+                      <li>Pinyons</li>
+                      <li>Oli d'oliva verge extra</li>
+                      <li>Sal</li>
+                    </ul>
+                    <p>Preparació:</p>
+                    <ol>
+                      <li>Renteu l'albergínia, l'assequeu i la talleu en làmines fines amb una mandolina.</li>
+                      <li>Salem les làmines d'albergínia per les dues cares i posem a la paella Efficient de 28cm, que
+                        prèviament hem pintat amb un pinzell i oli d'oliva verge extra.</li>
+                      <li>Cuinem les albergínies pels dos costats, es fan súper ràpid i les anem reservant en un plat.
+                      </li>
+                      <li>Quan les tenim totes cuinades agafem una cassola baixa Efficient Plus de 24 cm. Hi posem una
+                        cullerada plena de mel de canya al fons de la cassola repartint-la tan bé com sigui possible per
+                        tota la superfície.</li>
+                      <li>A continuació col·loquem la meitat de les albergínies intentant cobrir tota la superfície de
+                        la
+                        cassola. Cobrim amb el formatge ricotta repartint-lo bé per tota la superfície i acabem amb una
+                        altra capa d'albergínies.</li>
+                      <li>Ho cobrim amb la massa de pasta de full que hauria de ser una mica més gran que la cassola per
+                        poder doblegar
+                        les vores fàcilment. Punxem la pasta de full amb una punta per evitar que pugi molt.</li>
+                      <li>Enfornem a 180ºC durant 15-20 minuts amb el forn preescalfat opció amunt-avall o fins que la
+                        pasta de full estigui daurada.</li>
+                      <li>Serviu-ho amb uns quants pinyons per sobre.</li>
+                    </ol>
+                    <p>I a gaudir! 🤤</p>
+                    <p>Una recepta senzilla i curiosa per sorprendre als teus convidats aquest Nadal. 👌</p>
+                    <p>--</p>
+                    <p>#navidad #navidad2021 #nadal #nadal2021 #comida #dinardenadal #menudenavidad #menudenadal
+                      #entrantesnavideños #entrantsdenadal #entrantesnavidad #foodie #foodporn #tartatatin #tatin
+                      #tartasalada #veggie #christmas #receta #recepta #receptadenadal #recetanavidad</p>
+                  </div>
 
                 </div>
               </div>
@@ -200,10 +223,10 @@
 
               <!-- <p class="pildora__title-label">PíLDORA</p> -->
               <div class="row">
-                <div class="pildora__title-number col-xs-1">
+                <div class="pildora__title-number col-xs-12 col-md-1">
                   <h2>2</h2>
                 </div>
-                <div class="pildora__title-text col-xs-11">
+                <div class="pildora__title-text col-xs-12 col-md-11">
                   <h2>Opticonsejo - Redecora tus objetos con pintura en spray</h2>
                 </div>
               </div>
@@ -212,35 +235,46 @@
           <div class="pildora__body">
             <div class="content">
               <div class="row">
-                <div class="pildora__body-img col-xs-2">
+                <div class="pildora__body-img col-xs-12 col-md-2">
                   <img src="https://soulaimanassikiou.github.io/optiredes-pildores/src/img/pildores/49-2.png" alt="">
                 </div>
 
-                <div class="pildora__body-spanish col-xs-5">
-                  <img src="../src/img/spanish-flag.svg" alt="" style="width: 48px;">
-                  <p>¡Redecora tus objetos con pintura en spray! 🎨</p>
-                  <p>Es súper sencillo, en tan solo 3 pasos conseguirás cambiar tus objetos decorativos para
-                    actualizarlos, y que vayan cambiando acorde al estilo de tu casa. ✨</p>
-                  <p>Mira como cambiamos el color de esta lámpara:</p>
-                  <p>https://www.optimusferreteria.com/opticonsejo/pintamos-una-lampara-con-pintura-en-spray/</p>
-                  <p>¡Y píntalo todo! 😍</p>
-                  <p>--</p>
-                  <p>#lampara #redecora #pinturaenspray #spraypaint #pintando #reforma #decoracion #deco #diy #bricolaje
-                    #handmade #manualidades #pintyplus #spray #pintura @pintyplus_oficial</p>
+                <div class="pildora__body-spanish col-xs-12 col-md-5">
+                  <button class="button button-copy" onclick="copyText(event, 'pil-2-es', 'tool-2-es')">
+                    <img class="flag" src="../src/img/spanish-flag.svg" alt="" style="width: 24px;">
+                    <span>copiar texto</span>
+                  </button>
+                  <div id="pil-2-es">
+                    <p>¡Redecora tus objetos con pintura en spray! 🎨</p>
+                    <p>Es súper sencillo, en tan solo 3 pasos conseguirás cambiar tus objetos decorativos para
+                      actualizarlos, y que vayan cambiando acorde al estilo de tu casa. ✨</p>
+                    <p>Mira como cambiamos el color de esta lámpara:</p>
+                    <p>https://www.optimusferreteria.com/opticonsejo/pintamos-una-lampara-con-pintura-en-spray/</p>
+                    <p>¡Y píntalo todo! 😍</p>
+                    <p>--</p>
+                    <p>#lampara #redecora #pinturaenspray #spraypaint #pintando #reforma #decoracion #deco #diy
+                      #bricolaje
+                      #handmade #manualidades #pintyplus #spray #pintura @pintyplus_oficial</p>
+                  </div>
                 </div>
 
-                <div class="pildora__body-catalan col-xs-5">
-                  <img src="../src/img/catalan-flag.svg" alt="" style="width: 48px;">
-                  <p>Redecora els teus objectes amb pintura en esprai! 🎨</p>
-                  <p>És molt senzill, en tan sols 3 passos aconseguiràs canviar els teus objectes decoratius per
-                    actualitzar-los, i que vagin canviant d'acord amb l'estil de casa teva. ✨</p>
-                  <p>Mira com canviem el color d'aquest llum:</p>
-                  <p>https://www.optimusferreteria.com/opticonsejo/pintamos-una-lampara-con-pintura-en-spray/</p>
-                  <p>A pintar-ho tot! 😍</p>
-                  <p>--</p>
-                  <p>#lampara #lampada #redecora #pinturaenspray #spraypaint #pintando #pintant #reforma #decoracion
-                    #decoració #deco #diy #bricolaje #bricolatge
-                    #handmade #manualidades #manualitats #pintyplus #spray #pintura @pintyplus_oficial</p>
+                <div class="pildora__body-catalan col-xs-12 col-md-5">
+                  <button class="button button-copy" onclick="copyText(event, 'pil-2-cat', 'tool-2-cat')">
+                    <img class="flag" src="../src/img/catalan-flag.svg" alt="" style="width: 24px;">
+                    <span>copiar text</span>
+                  </button>
+                  <div id="pil-2-cat">
+                    <p>Redecora els teus objectes amb pintura en esprai! 🎨</p>
+                    <p>És molt senzill, en tan sols 3 passos aconseguiràs canviar els teus objectes decoratius per
+                      actualitzar-los, i que vagin canviant d'acord amb l'estil de casa teva. ✨</p>
+                    <p>Mira com canviem el color d'aquest llum:</p>
+                    <p>https://www.optimusferreteria.com/opticonsejo/pintamos-una-lampara-con-pintura-en-spray/</p>
+                    <p>A pintar-ho tot! 😍</p>
+                    <p>--</p>
+                    <p>#lampara #lampada #redecora #pinturaenspray #spraypaint #pintando #pintant #reforma #decoracion
+                      #decoració #deco #diy #bricolaje #bricolatge
+                      #handmade #manualidades #manualitats #pintyplus #spray #pintura @pintyplus_oficial</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -319,6 +353,8 @@
 
     </div>
   </footer>
+
+  <link rel="stylesheet" type="text/css" href="/src/js/index.js">
 </body>
 
 </html>

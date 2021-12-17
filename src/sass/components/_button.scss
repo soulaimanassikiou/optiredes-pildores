@@ -1,4 +1,5 @@
 .button {
+  position: relative;
   background-color: $brand-color;
   font-family: 'Novecento', serif;
   border: none;
@@ -8,7 +9,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  text-decoration: none;
+  -webkit-box-shadow: 15px 15px $dark-grey;
+  -moz-box-shadow: 15px 15px $dark-grey;
   box-shadow: 15px 15px $dark-grey;
 
   animation: button_animation 1s ease forwards;
@@ -17,14 +19,24 @@
   &:hover{
     background-color: $secondary-color;
     text-decoration: none;
-    box-shadow: 5px 5px $dark-grey;
+    -webkit-box-shadow: 0px 0px $dark-grey;
+    -moz-box-shadow: 0px 0px $dark-grey;
+    box-shadow: 0px 0px $dark-grey;
+  }
+  &-copy{
+    background-color: $dark-grey;
+    padding: 8px 16px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    display: block;
   }
 }
 
 @-webkit-keyframes button_animation {
-  0% { box-shadow: 15px 15px $dark-grey; }
-  25% { box-shadow: 5px 5px $dark-grey; }
-  50% { box-shadow: 15px 15px $dark-grey; }
-  75% { box-shadow: 5px 5px $dark-grey; }
-  100% { box-shadow: 15px 15px $dark-grey; }
+  0% { -webkit-box-shadow: 15px 15px $dark-grey; -moz-box-shadow: 15px 15px $dark-grey; box-shadow: 15px 15px $dark-grey; }
+  25% { -webkit-box-shadow: 5px 5px $dark-grey; -moz-box-shadow: 5px 5px $dark-grey; box-shadow: 5px 5px $dark-grey; }
+  50% { -webkit-box-shadow: 15px 15px $dark-grey; -moz-box-shadow: 15px 15px $dark-grey; box-shadow: 15px 15px $dark-grey; }
+  75% { -webkit-box-shadow: 5px 5px $dark-grey; -moz-box-shadow: 5px 5px $dark-grey; box-shadow: 5px 5px $dark-grey; }
+  100% { -webkit-box-shadow: 15px 15px $dark-grey; -moz-box-shadow: 15px 15px $dark-grey; box-shadow: 15px 15px $dark-grey; }
 }

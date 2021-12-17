@@ -3,3 +3,13 @@
   height: 48px;
   margin-left: 1em;
 }
+
+.flag{
+  width: 48px;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-icon {
+    margin-left: 0;
+  }
+}
