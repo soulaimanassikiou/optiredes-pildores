@@ -1,4 +1,6 @@
 function copyText(e, id, tooltip) {
+
+  //TODO: Estaria bé que al pulsar sobre copiar puguem formatejar el text perquè copiï els punts o numeros de les llistes <ul>
   var range = document.createRange();
   range.selectNode(document.getElementById(id));
   window.getSelection().removeAllRanges(); // clear current selection
